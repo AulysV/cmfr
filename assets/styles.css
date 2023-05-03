@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
 
+@font-face {
+    font-family: 'Minecraftia';
+    src: url("fonts/minecraftia/Minecraftia-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Minecraftory";
+    src: url("fonts/minercraftory/Minercraftory.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,14 +24,16 @@ body {
 
 
 h1 {
+    font-family: 'Minecraftia', "Inter", sans-serif;
     font-size: 4em;
     font-weight: 400;
     color: #f5f5f5;
 }
 
 h2 {
+    font-family: 'Minecraftory', "Inter", sans-serif;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 200;
     color: #008132;
     margin-bottom: 10px;
 }
@@ -124,15 +136,40 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-#landing>* {
-    margin-bottom: 0.5em;
+#landing>img {
+    margin-bottom: 2em;
 }
 
 #presentation {
-    width: 60vw;
+    width: 90vw;
     margin: 2em auto;
 }
 
-#presentation>* {
-    margin-bottom: 1em;
+#presentation>div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3em 0;
+}
+
+#presentation>div .landingtext {
+    max-width: 30vw;
+    text-align: justify;
+}
+
+#presentation>div>img {
+    width: 30vw;
+    border-radius: 10px;
+}
+
+
+
+footer {
+    width: 90vw;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #161616;
+    align-items: center;
+    text-align: center;
+    padding: 1em 0;
 }
